@@ -49,7 +49,9 @@
           <span>Aster</span>
         </a>
         <nav class="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
+          <a href="./card/" class="transition-colors hover:text-foreground">Aster Card</a>
           <a href="#features" class="transition-colors hover:text-foreground">Features</a>
+          <a href="./meridian/" class="transition-colors hover:text-foreground">Meridian</a>
           <a href="#card" class="transition-colors hover:text-foreground">The Card</a>
           <a href="#security" class="transition-colors hover:text-foreground">Security</a>
           <a href="../index.html" class="transition-colors hover:text-foreground">Commonwealth</a>
@@ -88,8 +90,10 @@
               powered by Commonwealth Bank.
             </p>
             <div class="flex flex-col gap-4 sm:flex-row">
-              <a href="#cta" class="inline-flex h-14 items-center justify-center rounded-full bg-foreground px-8 text-lg font-semibold text-white transition hover:bg-foreground/90">Open Account</a>
-              <a href="#features" class="inline-flex h-14 items-center justify-center rounded-full border border-border px-8 text-lg font-semibold text-foreground transition hover:bg-muted">
+              <a href="#cta" class="inline-flex items-center justify-center rounded-full bg-foreground px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-foreground/90">Open Account</a>
+              <a href="./card/" class="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-foreground transition hover:bg-muted">View Aster Card</a>
+              <a href="./meridian/" class="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-primary/90">View Meridian</a>
+              <a href="#features" class="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.14em] text-foreground transition hover:bg-muted">
                 Explore Features
               </a>
             </div>
@@ -143,6 +147,28 @@
               </p>
             </article>
           </div>
+          <div class="reveal mt-12 grid gap-6 lg:grid-cols-2">
+            <article class="rounded-[2rem] border border-border bg-white p-8 shadow-sm">
+              <p class="text-[11px] uppercase tracking-[0.28em] text-primary">Everyday Tier</p>
+              <h3 class="mt-4 font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground md:text-[1.75rem]">Aster Card</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                Included with Aster checking, with simple cashback and travel-friendly utility for everyday customers entering the platform.
+              </p>
+              <a href="./card/" class="mt-6 inline-flex rounded-full bg-foreground px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-foreground/90">
+                View Aster Card
+              </a>
+            </article>
+            <article class="rounded-[2rem] border border-border bg-white p-8 shadow-sm">
+              <p class="text-[11px] uppercase tracking-[0.28em] text-primary">Flagship Tier</p>
+              <h3 class="mt-4 font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground md:text-[1.75rem]">Aster Meridian</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                The premium Aster card for clients who travel more frequently and want deeper rewards, lounge access, and elevated service.
+              </p>
+              <a href="./meridian/" class="mt-6 inline-flex rounded-full bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-primary/90">
+                View Meridian
+              </a>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -175,13 +201,21 @@
               app. It is designed to feel contemporary without becoming
               disposable or gimmicky.
             </p>
+            <p class="mb-8 text-base leading-7 text-muted-foreground">
+              For clients seeking our flagship travel and lifestyle card
+              experience, Aster Meridian extends the platform with elevated
+              rewards, global access, and concierge service.
+            </p>
             <ul class="mb-10 space-y-4">
               <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Contactless ready</li>
               <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Customizable limits</li>
               <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Instant freeze and unfreeze</li>
               <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Push notifications for every swipe</li>
             </ul>
-            <a href="#cta" class="rounded-full bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary/90">Get Your Card</a>
+            <div class="flex flex-wrap gap-4">
+              <a href="#cta" class="rounded-full bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary/90">Get Your Card</a>
+              <a href="./meridian/" class="rounded-full border border-border px-6 py-3 font-semibold text-foreground transition hover:bg-muted">Discover Meridian</a>
+            </div>
           </div>
         </div>
       </section>

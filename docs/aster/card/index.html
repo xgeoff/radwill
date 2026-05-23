@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster Card</title>
+    <meta
+      name="description"
+      content="Aster Card, the everyday card included with Aster checking."
+    />
+    <link rel="icon" type="image/svg+xml" href="../../public/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#ffffff",
+              foreground: "hsl(224 64% 33%)",
+              border: "hsl(214 32% 91%)",
+              primary: "hsl(228 80% 59%)",
+              secondary: "hsl(206 96% 72%)",
+              accent: "hsl(339 76% 59%)",
+              muted: "hsl(210 40% 96%)",
+              "muted-foreground": "hsl(215 25% 45%)",
+              chart5: "hsl(255 86% 63%)"
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              jakarta: ["Plus Jakarta Sans", "sans-serif"]
+            },
+            boxShadow: {
+              soft: "0 25px 80px rgba(35,52,91,0.10)"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/site.css" />
+  </head>
+  <body class="min-h-screen overflow-x-hidden bg-background font-sans text-foreground selection:bg-primary selection:text-white">
+    <header class="fixed top-0 z-50 w-full border-b border-border/70 bg-white/95 backdrop-blur-md">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+        <a href="../" class="flex items-center gap-3 font-jakarta text-xl font-bold tracking-tight">
+          <img src="../../public/aster/logo.png" alt="Aster Logo" class="h-12 w-12 object-contain" />
+          <span>Aster</span>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
+          <a href="#benefits" class="transition-colors hover:text-foreground">Benefits</a>
+          <a href="#details" class="transition-colors hover:text-foreground">Details</a>
+          <a href="../meridian/" class="transition-colors hover:text-foreground">Meridian</a>
+          <a href="../../index.html" class="transition-colors hover:text-foreground">Commonwealth</a>
+        </nav>
+        <a href="#apply" class="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary/90">
+          Open with Aster
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden px-6 pb-24 pt-32 md:pb-32 md:pt-44">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(115,194,250,0.30),transparent_28%),radial-gradient(circle_at_left,rgba(244,114,182,0.12),transparent_24%),linear-gradient(180deg,#ffffff,rgba(237,245,255,0.82),#ffffff)]"></div>
+        <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.02fr_0.98fr]">
+          <div class="reveal max-w-2xl">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-primary">Included with Aster Checking</p>
+            <h1 class="mt-6 font-jakarta text-5xl font-semibold tracking-[-0.05em] text-foreground md:text-7xl">
+              The everyday card
+              <span class="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">for everything ahead.</span>
+            </h1>
+            <p class="mt-6 max-w-xl text-xl leading-8 text-muted-foreground">
+              Aster Card is the starting point for the Aster ecosystem: clean, dependable, and designed for customers who want a polished everyday card without complexity.
+            </p>
+            <p class="mt-5 max-w-2xl text-base leading-7 text-muted-foreground">
+              Included with eligible Aster checking, it pairs straightforward rewards with an approachable premium feel, making it ideal for younger professionals and mainstream customers building their banking relationship.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#apply" class="inline-flex rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-primary/90">
+                Get Aster Card
+              </a>
+              <a href="#benefits" class="inline-flex rounded-full border border-border bg-white/60 px-7 py-3.5 text-sm font-semibold text-foreground transition hover:bg-white">
+                Explore benefits
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <div class="rounded-[2.25rem] border border-white/80 bg-white/70 p-6 shadow-soft backdrop-blur">
+              <img
+                src="../../public/cards/card-aster.png"
+                alt="Aster Card"
+                class="w-full rounded-[2rem] object-contain shadow-[0_25px_70px_rgba(35,52,91,0.14)]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="px-6 py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal mb-14 max-w-3xl">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-primary">Everyday Benefits</p>
+            <h2 class="mt-4 font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-6xl">
+              Simple rewards. Better defaults.
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-muted-foreground">
+              Aster Card is meant to feel immediately useful: an everyday card with cleaner economics, intuitive controls, and enough polish to feel like a step up from standard bank cards.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="reveal rounded-[2rem] border border-border bg-white p-7 shadow-[0_16px_50px_rgba(35,52,91,0.06)]">
+              <div class="mb-6 h-12 w-12 rounded-2xl bg-secondary/20"></div>
+              <h3 class="font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground">Cashback</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                Straightforward cashback on everyday categories, with no rotating enrollment calendar to manage.
+              </p>
+            </article>
+            <article class="reveal rounded-[2rem] border border-border bg-white p-7 shadow-[0_16px_50px_rgba(35,52,91,0.06)]">
+              <div class="mb-6 h-12 w-12 rounded-2xl bg-accent/10"></div>
+              <h3 class="font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground">Travel Ready</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                Core travel protections and simple booking value for customers beginning to travel more frequently.
+              </p>
+            </article>
+            <article class="reveal rounded-[2rem] border border-border bg-white p-7 shadow-[0_16px_50px_rgba(35,52,91,0.06)]">
+              <div class="mb-6 h-12 w-12 rounded-2xl bg-chart5/10"></div>
+              <h3 class="font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground">Digital Control</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                Instant card lock, spend notifications, virtual card controls, and app-first servicing inside Aster.
+              </p>
+            </article>
+            <article class="reveal rounded-[2rem] border border-border bg-white p-7 shadow-[0_16px_50px_rgba(35,52,91,0.06)]">
+              <div class="mb-6 h-12 w-12 rounded-2xl bg-secondary/25"></div>
+              <h3 class="font-jakarta text-2xl font-semibold tracking-[-0.03em] text-foreground">Premium Feel</h3>
+              <p class="mt-4 text-base leading-7 text-muted-foreground">
+                A quieter, more refined physical card with soft-touch material and a cleaner aesthetic than typical starter products.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-24">
+        <div class="mx-auto grid max-w-7xl items-center gap-10 rounded-[2.4rem] bg-foreground px-8 py-10 text-white lg:grid-cols-[0.95fr_1.05fr] lg:px-12">
+          <div class="reveal">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-white/60">Who It’s For</p>
+            <h2 class="mt-4 font-jakarta text-4xl font-semibold tracking-[-0.04em] md:text-5xl">
+              A first serious card for the Aster relationship.
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-white/74">
+              Built for younger professionals, early-career households, and mainstream checking customers looking for a cleaner everyday card with better design and stronger bank backing.
+            </p>
+          </div>
+          <div class="reveal grid gap-4 md:grid-cols-2">
+            <div class="rounded-[1.6rem] border border-white/10 bg-white/6 p-6">
+              <p class="text-xs uppercase tracking-[0.24em] text-white/55">Audience</p>
+              <p class="mt-3 text-lg leading-7 text-white/82">Younger professionals, salaried households, and new Aster account holders entering the ecosystem.</p>
+            </div>
+            <div class="rounded-[1.6rem] border border-white/10 bg-white/6 p-6">
+              <p class="text-xs uppercase tracking-[0.24em] text-white/55">Positioning</p>
+              <p class="mt-3 text-lg leading-7 text-white/82">Included with Aster checking. Clean rewards, approachable premium feel, and everyday usability.</p>
+            </div>
+            <div class="rounded-[1.6rem] border border-white/10 bg-white/6 p-6">
+              <p class="text-xs uppercase tracking-[0.24em] text-white/55">Card Role</p>
+              <p class="mt-3 text-lg leading-7 text-white/82">The everyday tier within Aster: simple, useful, and designed to be the first card in the relationship.</p>
+            </div>
+            <div class="rounded-[1.6rem] border border-white/10 bg-white/6 p-6">
+              <p class="text-xs uppercase tracking-[0.24em] text-white/55">Upward Path</p>
+              <p class="mt-3 text-lg leading-7 text-white/82">For customers who grow into more travel-intensive usage, Meridian becomes the flagship step up.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="px-6 py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="reveal text-center">
+              <h3 class="font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground">No Fee</h3>
+              <p class="mt-4 text-xs uppercase tracking-[0.24em] text-muted-foreground">Annual Fee</p>
+              <p class="mt-4 text-sm leading-7 text-muted-foreground">Included with eligible Aster checking relationships.</p>
+            </div>
+            <div class="reveal text-center">
+              <h3 class="font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground">3%</h3>
+              <p class="mt-4 text-xs uppercase tracking-[0.24em] text-muted-foreground">Lifestyle Categories</p>
+              <p class="mt-4 text-sm leading-7 text-muted-foreground">Everyday returns across categories like dining, transit, and select subscriptions.</p>
+            </div>
+            <div class="reveal text-center">
+              <h3 class="font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground">1.5%</h3>
+              <p class="mt-4 text-xs uppercase tracking-[0.24em] text-muted-foreground">All Other Purchases</p>
+              <p class="mt-4 text-sm leading-7 text-muted-foreground">A clean base rate for general spend without rotating complexity.</p>
+            </div>
+            <div class="reveal text-center">
+              <h3 class="font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground">Soft-Touch</h3>
+              <p class="mt-4 text-xs uppercase tracking-[0.24em] text-muted-foreground">Construction</p>
+              <p class="mt-4 text-sm leading-7 text-muted-foreground">Ivory finish, Aster blue detailing, and a more tactile material language.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="relative overflow-hidden px-6 py-28 text-center">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(115,194,250,0.28),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(244,114,182,0.12),transparent_26%),linear-gradient(180deg,#ffffff,#f7fbff,#ffffff)]"></div>
+        <div class="reveal mx-auto max-w-4xl">
+          <img src="../../public/aster/logo.png" alt="" class="mx-auto mb-10 h-16 w-16 object-contain" />
+          <h2 class="font-jakarta text-4xl font-semibold tracking-[-0.04em] text-foreground md:text-6xl">
+            Start with the card that feels like Aster.
+          </h2>
+          <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
+            Open Aster checking and begin with a clean, capable everyday card that brings rewards, control, and a more considered consumer banking experience.
+          </p>
+          <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="#apply" class="inline-flex rounded-full bg-primary px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-primary/90">
+              Open with Aster
+            </a>
+            <a href="../meridian/" class="inline-flex rounded-full border border-border bg-white/70 px-8 py-3.5 text-sm font-semibold text-foreground transition hover:bg-white">
+              Explore Meridian
+            </a>
+          </div>
+          <p class="mx-auto mt-10 max-w-xl text-xs leading-6 text-muted-foreground/70">
+            Aster is a consumer banking service powered by Commonwealth Bank. Card terms, APR ranges, and rewards program conditions apply.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../assets/site.js"></script>
+  </body>
+</html>

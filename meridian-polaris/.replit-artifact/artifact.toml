@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/aster-meridian/"
+title = "Aster Meridian"
+version = "1.0.0"
+id = "artifacts/aster-meridian"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/aster-meridian/" ]
+localPort = 18292
+
+[services.development]
+run = "pnpm --filter @workspace/aster-meridian run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aster-meridian", "run", "build" ]
+publicDir = "artifacts/aster-meridian/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18292"
+BASE_PATH = "/aster-meridian/"
