@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/aster/"
+title = "Aster Bank"
+version = "1.0.0"
+id = "artifacts/aster"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/aster/" ]
+localPort = 24342
+
+[services.development]
+run = "pnpm --filter @workspace/aster run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aster", "run", "build" ]
+publicDir = "artifacts/aster/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24342"
+BASE_PATH = "/aster/"
