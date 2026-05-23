@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster</title>
+    <meta
+      name="description"
+      content="Aster, powered by Commonwealth Bank."
+    />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#ffffff",
+              foreground: "hsl(224 64% 33%)",
+              border: "hsl(214 32% 91%)",
+              primary: "hsl(228 80% 59%)",
+              secondary: "hsl(206 96% 72%)",
+              accent: "hsl(339 76% 59%)",
+              muted: "hsl(210 40% 96%)",
+              "muted-foreground": "hsl(215 25% 45%)",
+              chart5: "hsl(255 86% 63%)"
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              jakarta: ["Plus Jakarta Sans", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="min-h-screen overflow-x-hidden bg-background font-sans text-foreground">
+    <header class="fixed top-0 z-50 w-full border-b border-border/70 bg-white">
+      <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+        <a href="./" class="flex items-center gap-3 font-jakarta text-xl font-bold tracking-tight">
+          <img src="../public/aster/logo.png" alt="Aster Logo" class="h-12 w-12 object-contain" />
+          <span>Aster</span>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
+          <a href="#features" class="transition-colors hover:text-foreground">Features</a>
+          <a href="#card" class="transition-colors hover:text-foreground">The Card</a>
+          <a href="#security" class="transition-colors hover:text-foreground">Security</a>
+          <a href="../index.html" class="transition-colors hover:text-foreground">Commonwealth</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="#footer" class="hidden text-sm font-semibold text-foreground sm:inline-flex">Log In</a>
+          <a href="#cta" class="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary/90">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden pb-20 pt-32 md:pb-32 md:pt-48">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_rgba(115,194,250,0.25),_transparent_38%),linear-gradient(180deg,#ffffff,rgba(237,245,255,0.8),#ffffff)]"></div>
+        <div class="absolute right-0 top-0 -z-10 h-[800px] w-[800px] translate-x-1/3 -translate-y-1/3 rounded-full bg-accent/10 blur-[120px] opacity-60"></div>
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
+          <div class="reveal max-w-2xl">
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-secondary/20 px-3 py-1 text-sm font-semibold text-primary">
+              <span class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
+              </span>
+              Now accepting new members
+            </div>
+            <h1 class="font-jakarta text-5xl font-bold leading-[1.08] tracking-tight md:text-7xl">
+              Banking, but make it
+              <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">vibrant.</span>
+            </h1>
+            <p class="mb-5 mt-6 max-w-lg text-xl leading-relaxed text-muted-foreground">
+              The digital-first bank for how you actually live and spend.
+              Instant, clear, and perfectly precise.
+            </p>
+            <p class="mb-8 max-w-2xl text-base leading-7 text-muted-foreground">
+              Aster is personal banking reimagined for modern customers, with
+              checking, savings, cards, student banking, and first-home lending
+              powered by Commonwealth Bank.
+            </p>
+            <div class="flex flex-col gap-4 sm:flex-row">
+              <a href="#cta" class="inline-flex h-14 items-center justify-center rounded-full bg-foreground px-8 text-lg font-semibold text-white transition hover:bg-foreground/90">Open Account</a>
+              <a href="#features" class="inline-flex h-14 items-center justify-center rounded-full border border-border px-8 text-lg font-semibold text-foreground transition hover:bg-muted">
+                Explore Features
+              </a>
+            </div>
+            <p class="mt-6 text-sm font-medium text-muted-foreground">
+              Powered by Commonwealth Bank. FDIC Insured.
+            </p>
+          </div>
+          <div class="reveal relative flex items-center justify-center lg:h-[700px]">
+            <div class="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-primary/20 to-accent/20 blur-3xl opacity-40"></div>
+            <img
+              src="../public/aster/mockup-hero.png"
+              alt="Aster app interface"
+              class="relative z-10 w-full max-w-[400px] object-contain drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="border-y border-border/70 bg-muted/60 px-6 py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="reveal mx-auto mb-20 max-w-3xl text-center">
+            <h2 class="font-jakarta text-3xl font-bold tracking-tight md:text-5xl">Designed for velocity.</h2>
+            <p class="mt-6 text-lg text-muted-foreground">
+              We stripped away the branches, the fees, and the waiting. What’s
+              left is a clear financial tool with serious banking underneath.
+            </p>
+          </div>
+          <div class="reveal grid gap-8 md:grid-cols-3">
+            <article class="rounded-3xl border border-border bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+              <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-muted text-primary">⚡</div>
+              <h3 class="font-jakarta text-xl font-bold">Instant Everything</h3>
+              <p class="mt-3 leading-relaxed text-muted-foreground">
+                Real-time notifications, instant card freezing, and fast
+                transfers that keep up with daily movement.
+              </p>
+            </article>
+            <article class="rounded-3xl border border-border bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+              <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-muted text-accent">◎</div>
+              <h3 class="font-jakarta text-xl font-bold">No Borders</h3>
+              <p class="mt-3 leading-relaxed text-muted-foreground">
+                Spend globally with no foreign transaction fees and exchange
+                rates designed to stay legible and fair.
+              </p>
+            </article>
+            <article class="rounded-3xl border border-border bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+              <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-muted text-chart5">◌</div>
+              <h3 class="font-jakarta text-xl font-bold">Digital Native</h3>
+              <p class="mt-3 leading-relaxed text-muted-foreground">
+                Add to Apple Wallet instantly, create virtual cards, and manage
+                your financial life from the app.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="card" class="relative overflow-hidden px-6 py-32">
+        <div class="absolute inset-0 opacity-[0.08]">
+          <img src="../public/aster/abstract-geo.png" alt="" />
+        </div>
+        <div class="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
+          <div class="reveal relative">
+            <img
+              src="../public/aster/lifestyle-pay.png"
+              alt="Using the Aster card"
+              class="aspect-square w-full rounded-[2.5rem] object-cover md:aspect-[4/3]"
+            />
+            <div class="hidden max-w-xs rounded-3xl border border-border bg-white p-6 shadow-xl md:absolute md:-bottom-8 md:-right-8 md:block">
+              <div class="mb-2 flex items-center gap-4">
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">◉</div>
+                <div>
+                  <strong class="block font-jakarta text-foreground">Payment Sent</strong>
+                  <span class="mt-1 block text-sm text-muted-foreground">Blue Bottle Coffee</span>
+                </div>
+              </div>
+              <div class="mt-4 text-2xl font-bold text-foreground">$6.50</div>
+            </div>
+          </div>
+          <div class="reveal">
+            <h2 class="font-jakarta text-4xl font-bold tracking-tight md:text-5xl">A card that matches your energy.</h2>
+            <p class="mb-8 mt-6 text-lg leading-relaxed text-muted-foreground">
+              The Aster card is fast, tactile, and fully integrated with the
+              app. It is designed to feel contemporary without becoming
+              disposable or gimmicky.
+            </p>
+            <ul class="mb-10 space-y-4">
+              <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Contactless ready</li>
+              <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Customizable limits</li>
+              <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Instant freeze and unfreeze</li>
+              <li class="flex items-center gap-3 font-medium"><span class="flex h-6 w-6 items-center justify-center rounded-full bg-secondary/25 text-primary">✓</span>Push notifications for every swipe</li>
+            </ul>
+            <a href="#cta" class="rounded-full bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary/90">Get Your Card</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="bg-foreground px-6 py-24 text-white">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+          <div class="reveal">
+            <h2 class="font-jakarta text-3xl font-bold md:text-4xl">Serious security, friendly face.</h2>
+            <p class="mb-8 mt-6 text-lg leading-relaxed text-white/70">
+              Aster is the modern interface, but your money is held by
+              Commonwealth Bank. That means institutional-grade controls and
+              FDIC insurance up to applicable limits.
+            </p>
+            <div class="flex items-center gap-4">
+              <img src="../public/aster/logo.png" alt="Aster" class="h-8 w-8 object-contain brightness-0 invert" />
+              <div class="h-8 w-px bg-white/20"></div>
+              <strong class="font-jakarta text-xl font-semibold tracking-tight text-white/90">COMMONWEALTH</strong>
+            </div>
+          </div>
+          <div class="reveal grid grid-cols-2 gap-4">
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <span class="text-sm uppercase tracking-wider text-white/55">FDIC Insured</span>
+              <strong class="mt-2 block text-xl font-bold">Up to $250k</strong>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <span class="text-sm uppercase tracking-wider text-white/55">Encryption</span>
+              <strong class="mt-2 block text-xl font-bold">Bank-level 256-bit</strong>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <span class="text-sm uppercase tracking-wider text-white/55">Support</span>
+              <strong class="mt-2 block text-xl font-bold">24/7 In-app</strong>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <span class="text-sm uppercase tracking-wider text-white/55">Uptime</span>
+              <strong class="mt-2 block text-xl font-bold">99.99%</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="relative overflow-hidden px-6 py-32 text-center">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_rgba(81,116,235,0.12),_transparent_38%),linear-gradient(180deg,#ffffff,#f7fbff,#ffffff)]"></div>
+        <div class="reveal mx-auto max-w-4xl">
+          <h2 class="font-jakarta text-5xl font-bold tracking-tight md:text-7xl">Ready for better banking?</h2>
+          <p class="mx-auto mb-12 mt-8 max-w-2xl text-xl text-muted-foreground">
+            Join a more contemporary consumer banking experience with the trust
+            foundation of Commonwealth behind it.
+          </p>
+          <a href="#footer" class="inline-flex h-16 items-center rounded-full bg-foreground px-10 text-xl font-semibold text-white transition hover:bg-foreground/90">
+            Open Account Now
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="border-t border-border bg-muted/60 px-6 py-12">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
+        <div class="flex items-center gap-3 font-jakarta text-lg font-bold tracking-tight text-muted-foreground">
+          <img src="../public/aster/logo.png" alt="Aster Logo" class="h-10 w-10 object-contain" />
+          <span>Aster</span>
+        </div>
+        <p class="max-w-xl text-center text-sm leading-6 text-muted-foreground md:text-left">
+          Aster is a consumer banking service powered by Commonwealth Bank.
+          Deposits provided by Commonwealth Bank, Member FDIC.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
