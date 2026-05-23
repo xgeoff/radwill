@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/radwill/"
+title = "RW Radwill & Co"
+version = "1.0.0"
+id = "artifacts/radwill"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/radwill/" ]
+localPort = 18912
+
+[services.development]
+run = "pnpm --filter @workspace/radwill run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/radwill", "run", "build" ]
+publicDir = "artifacts/radwill/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18912"
+BASE_PATH = "/radwill/"

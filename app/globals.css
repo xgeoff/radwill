@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-marble text-ink font-sans antialiased;
+  background-image:
+    radial-gradient(circle at top, rgba(181, 150, 74, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(250, 248, 242, 1), rgba(244, 239, 228, 0.75));
+}
+
+* {
+  border-color: rgba(28, 36, 33, 0.12);
+}
+
+.eyebrow {
+  @apply text-xs uppercase tracking-[0.34em] text-slate;
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-6 sm:px-8 lg:px-12;
+}
+
+.headline {
+  @apply font-serif text-4xl leading-tight text-ink sm:text-5xl lg:text-6xl;
+}
+
+.subheadline {
+  @apply font-serif text-3xl leading-tight text-ink sm:text-4xl;
+}
+
+.body-copy {
+  @apply text-base leading-7 text-slate sm:text-lg;
+}
+
+.surface {
+  @apply rounded-[2rem] border border-black/5 bg-white/80 shadow-card backdrop-blur;
+}
+
+.dark-surface {
+  @apply rounded-[2rem] border border-white/10 bg-ink text-ivory shadow-card;
+}
+
+.gold-rule {
+  @apply h-px w-20 bg-brass/80;
+}
