@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commonwealth Capital</title>
+    <meta name="description" content="Commonwealth Capital provides institutional advisory, lending, and finance capabilities." />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#050505",
+              foreground: "#f4efe4",
+              border: "rgba(255,255,255,0.10)",
+              primary: "#c8902a",
+              secondary: "#1a1a1a",
+              muted: "#1a1a1a",
+              "muted-foreground": "#999999"
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              serif: ["Cormorant Garamond", "serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="min-h-screen bg-background font-sans text-foreground selection:bg-primary selection:text-background">
+    <div class="noise-overlay"></div>
+    <header class="fixed left-0 top-0 z-40 w-full px-6 py-8 mix-blend-difference">
+      <div class="mx-auto flex max-w-[1400px] items-center justify-between gap-6">
+        <a href="../index.html" class="text-[10px] uppercase tracking-[0.3em] text-muted-foreground transition-colors hover:text-foreground">Commonwealth Bank</a>
+        <nav class="hidden items-center gap-5 text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:flex">
+          <a href="../index.html" class="transition-colors hover:text-foreground">Home</a>
+          <a href="../private/" class="transition-colors hover:text-foreground">Private</a>
+          <span>Capital</span>
+          <a href="../invest/" class="transition-colors hover:text-foreground">Invest</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative flex min-h-screen items-center overflow-hidden px-6">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(200,144,42,0.12),transparent_22%),linear-gradient(180deg,rgba(5,5,5,0.95),rgba(5,5,5,1))]"></div>
+        <div class="reveal mx-auto grid max-w-[1400px] items-center gap-16 lg:grid-cols-[1fr_0.9fr]">
+          <div class="max-w-3xl">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-primary">Commonwealth Capital</p>
+            <h1 class="mt-6 font-serif text-4xl leading-[1.02] md:text-6xl lg:text-7xl">Institutional advice and financing for complex mandates.</h1>
+            <p class="mt-8 max-w-2xl text-lg font-light leading-8 text-muted-foreground">
+              Commonwealth Capital serves corporations, sovereign entities, developers, and institutional investors with a conservative underwriting culture and an international advisory lens.
+            </p>
+          </div>
+          <div class="reveal grid gap-6">
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Franchise Scale</p>
+              <p class="mt-4 font-serif text-3xl text-foreground">$126B in assets under management</p>
+            </div>
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Reach</p>
+              <p class="mt-4 text-base font-light leading-7 text-muted-foreground">Institutional clients across infrastructure, real estate, logistics, transport, and public systems in 38 countries.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-border bg-white/[0.03] px-6 py-32">
+        <div class="mx-auto max-w-[1400px]">
+          <div class="reveal mb-16 max-w-3xl">
+            <p class="mb-4 text-xs uppercase tracking-[0.3em] text-primary">Capabilities</p>
+            <h2 class="font-serif text-3xl md:text-5xl">Global in scope, disciplined in execution.</h2>
+            <p class="mt-6 text-lg font-light leading-relaxed text-muted-foreground">The platform is built around mandates where long asset lives, informed counsel, and durable financing credibility matter.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">M&amp;A Advisory</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Sell-side, buy-side, and board advisory for privately held companies, strategic acquirers, and long-duration sponsors.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Corporate Lending</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Senior secured, asset-backed, and relationship-driven credit facilities structured for resilience and covenant clarity.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Infrastructure Finance</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Financing and advisory across transport, ports, utilities, district energy, and public-private partnership projects.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Sovereign Advisory</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Capital strategy and liability management support for governments, agencies, and state-linked issuers.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Asset Management</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Institutional portfolios across fixed income, private credit, real assets, and tailored liability-aware mandates.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Commercial Real Estate</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Structured financing and strategic advice for office, hospitality, multifamily, and mixed-use developments.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>

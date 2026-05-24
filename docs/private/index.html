@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commonwealth Private</title>
+    <meta name="description" content="Commonwealth Private provides private banking, trust, estate, and family office services." />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#050505",
+              foreground: "#f4efe4",
+              border: "rgba(255,255,255,0.10)",
+              primary: "#c8902a",
+              secondary: "#1a1a1a",
+              muted: "#1a1a1a",
+              "muted-foreground": "#999999"
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              serif: ["Cormorant Garamond", "serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="min-h-screen bg-background font-sans text-foreground selection:bg-primary selection:text-background">
+    <div class="noise-overlay"></div>
+    <header class="fixed left-0 top-0 z-40 w-full px-6 py-8 mix-blend-difference">
+      <div class="mx-auto flex max-w-[1400px] items-center justify-between gap-6">
+        <a href="../index.html" class="text-[10px] uppercase tracking-[0.3em] text-muted-foreground transition-colors hover:text-foreground">Commonwealth Bank</a>
+        <nav class="hidden items-center gap-5 text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:flex">
+          <a href="../index.html" class="transition-colors hover:text-foreground">Home</a>
+          <span>Private</span>
+          <a href="../capital/" class="transition-colors hover:text-foreground">Capital</a>
+          <a href="../invest/" class="transition-colors hover:text-foreground">Invest</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative flex min-h-screen items-center overflow-hidden px-6">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(200,144,42,0.14),transparent_24%),linear-gradient(180deg,rgba(5,5,5,0.95),rgba(5,5,5,1))]"></div>
+        <div class="reveal mx-auto grid max-w-[1400px] items-center gap-16 lg:grid-cols-[1fr_0.92fr]">
+          <div class="max-w-3xl">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-primary">Commonwealth Private</p>
+            <h1 class="mt-6 font-serif text-4xl leading-[1.02] md:text-6xl lg:text-7xl">Private banking for families who think in generations.</h1>
+            <p class="mt-8 max-w-2xl text-lg font-light leading-8 text-muted-foreground">
+              Commonwealth Private serves a limited client base whose needs extend beyond conventional wealth management into governance, succession, and the quiet administration of lasting private capital.
+            </p>
+          </div>
+          <div class="reveal grid gap-6">
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Mandate</p>
+              <p class="mt-4 font-serif text-3xl text-foreground">Discretion, continuity, and exacting service.</p>
+            </div>
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Client Base</p>
+              <p class="mt-4 text-base font-light leading-7 text-muted-foreground">Families, business owners, trusts, and family offices requiring coordinated banking, trust, estate, and philanthropic counsel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-border bg-white/[0.03] px-6 py-32">
+        <div class="mx-auto max-w-[1400px]">
+          <div class="reveal mb-16 max-w-3xl">
+            <p class="mb-4 text-xs uppercase tracking-[0.3em] text-primary">Services</p>
+            <h2 class="font-serif text-3xl md:text-5xl">A private office approach to wealth.</h2>
+            <p class="mt-6 text-lg font-light leading-relaxed text-muted-foreground">Mandates are intentionally selective. Each relationship is built around senior coverage and access to trust, lending, estate, and philanthropic capabilities without unnecessary complexity.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Wealth Planning</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Strategic balance sheet planning integrating liquidity reserves, investment policy, and family governance priorities.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Trust Services</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Administration and fiduciary oversight for trusts, foundations, and multigenerational family structures.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Estate Advisory</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Coordination of legal, tax, and legacy objectives to preserve continuity while navigating transition with discretion.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Philanthropic Strategy</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Support for private foundations, donor structures, and institutional philanthropy aligned with family priorities.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Family Office Coordination</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">A single point of orchestration across advisors, lending teams, administrators, and operating business stakeholders.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Private Credit Support</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Selective credit, liquidity, and collateralized lending solutions within a relationship-led advisory framework.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>

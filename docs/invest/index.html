@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commonwealth Invest</title>
+    <meta name="description" content="Commonwealth Invest provides brokerage, managed portfolios, and retirement planning." />
+    <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#050505",
+              foreground: "#f4efe4",
+              border: "rgba(255,255,255,0.10)",
+              primary: "#c8902a",
+              secondary: "#1a1a1a",
+              muted: "#1a1a1a",
+              "muted-foreground": "#999999"
+            },
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              serif: ["Cormorant Garamond", "serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body class="min-h-screen bg-background font-sans text-foreground selection:bg-primary selection:text-background">
+    <div class="noise-overlay"></div>
+    <header class="fixed left-0 top-0 z-40 w-full px-6 py-8 mix-blend-difference">
+      <div class="mx-auto flex max-w-[1400px] items-center justify-between gap-6">
+        <a href="../index.html" class="text-[10px] uppercase tracking-[0.3em] text-muted-foreground transition-colors hover:text-foreground">Commonwealth Bank</a>
+        <nav class="hidden items-center gap-5 text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:flex">
+          <a href="../index.html" class="transition-colors hover:text-foreground">Home</a>
+          <a href="../private/" class="transition-colors hover:text-foreground">Private</a>
+          <a href="../capital/" class="transition-colors hover:text-foreground">Capital</a>
+          <span>Invest</span>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="relative flex min-h-screen items-center overflow-hidden px-6">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(200,144,42,0.16),transparent_26%),linear-gradient(180deg,rgba(5,5,5,0.95),rgba(5,5,5,1))]"></div>
+        <div class="reveal mx-auto grid max-w-[1400px] items-center gap-16 lg:grid-cols-[1fr_0.9fr]">
+          <div class="max-w-3xl">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-primary">Commonwealth Invest</p>
+            <h1 class="mt-6 font-serif text-4xl leading-[1.02] md:text-6xl lg:text-7xl">Public markets approached with patience and discipline.</h1>
+            <p class="mt-8 max-w-2xl text-lg font-light leading-8 text-muted-foreground">
+              Commonwealth Invest serves individuals, families, and owner-operators seeking direct investing access, managed portfolios, retirement planning, and informed market guidance within a more traditional advisory framework.
+            </p>
+          </div>
+          <div class="reveal grid gap-6">
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Core Offering</p>
+              <p class="mt-4 font-serif text-3xl text-foreground">Brokerage, portfolios, retirement, and guidance.</p>
+            </div>
+            <div class="border border-border bg-white/[0.03] p-8">
+              <p class="text-xs uppercase tracking-[0.28em] text-primary">Client Profile</p>
+              <p class="mt-4 text-base font-light leading-7 text-muted-foreground">Affluent individuals and households moving from saving into disciplined long-term market participation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-border bg-white/[0.03] px-6 py-32">
+        <div class="mx-auto max-w-[1400px]">
+          <div class="reveal mb-16 max-w-3xl">
+            <p class="mb-4 text-xs uppercase tracking-[0.3em] text-primary">Platform</p>
+            <h2 class="font-serif text-3xl md:text-5xl">A more deliberate investing relationship.</h2>
+            <p class="mt-6 text-lg font-light leading-relaxed text-muted-foreground">The division is designed for clients who want more structure and insight than a retail brokerage platform, but do not require the full intimacy of Commonwealth Private.</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Self-Directed Brokerage</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Trading and custody tools for clients who prefer to direct their own market exposure with research and reporting support.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Managed Portfolios</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Risk-aligned portfolio models and discretionary management built around long-term allocation discipline.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Retirement Planning</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">IRA, rollover, and retirement planning services for clients translating income into durable long-range capital.</p>
+            </article>
+            <article class="reveal border border-border bg-white/[0.03] p-8">
+              <h3 class="font-serif text-2xl text-foreground">Advisor Guidance</h3>
+              <p class="mt-4 text-sm font-light leading-7 text-muted-foreground">Portfolio reviews, investment guidance, and market commentary without entering a full private banking relationship.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-32">
+        <div class="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-2">
+          <article class="reveal border border-border bg-white/[0.03] p-10">
+            <p class="text-xs uppercase tracking-[0.28em] text-primary">Retirement & Taxable Accounts</p>
+            <p class="mt-4 text-base font-light leading-7 text-muted-foreground">Taxable brokerage, IRA, joint, trust, and business account structures are supported with custody, reporting, and advisory pathways calibrated to longer-horizon households.</p>
+          </article>
+          <article class="reveal border border-border bg-white/[0.03] p-10">
+            <p class="text-xs uppercase tracking-[0.28em] text-primary">Research Posture</p>
+            <p class="mt-4 text-base font-light leading-7 text-muted-foreground">Commonwealth Invest emphasizes allocation discipline, market commentary, and patient capital formation rather than high-velocity trading culture.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="../assets/site.js"></script>
+  </body>
+</html>
